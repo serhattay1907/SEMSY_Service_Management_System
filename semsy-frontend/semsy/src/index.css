@@ -1,0 +1,175 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html,
+  body,
+  #root {
+    height: 100%;
+    background: #0a0a0f;
+    color: #f5f5f7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-family: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+    overscroll-behavior-y: none;
+  }
+
+  /* Ambient gradient backdrop — layered, not flat */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background:
+      radial-gradient(
+        ellipse 80% 50% at 50% -10%,
+        rgba(245, 158, 11, 0.08),
+        transparent 60%
+      ),
+      radial-gradient(
+        ellipse 60% 40% at 80% 30%,
+        rgba(217, 119, 6, 0.05),
+        transparent 70%
+      ),
+      radial-gradient(
+        ellipse 70% 50% at 10% 80%,
+        rgba(45, 212, 191, 0.04),
+        transparent 70%
+      ),
+      linear-gradient(180deg, #0a0a0f 0%, #12121a 100%);
+    pointer-events: none;
+  }
+
+  /* Scrollbar — minimal */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  /* Hide scrollbar for horizontal category tabs */
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-none {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* Focus ring */
+  :focus-visible {
+    outline: 2px solid #f59e0b;
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+
+  button:focus-visible {
+    outline-offset: 3px;
+  }
+}
+
+@layer components {
+  /* === Glass primitive === */
+  .glass {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(16px) saturate(140%);
+    -webkit-backdrop-filter: blur(16px) saturate(140%);
+    box-shadow:
+      inset 0 1px 0 0 rgba(255, 255, 255, 0.06),
+      0 8px 32px -8px rgba(0, 0, 0, 0.3);
+  }
+
+  .glass-strong {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(24px) saturate(160%);
+    -webkit-backdrop-filter: blur(24px) saturate(160%);
+    box-shadow:
+      inset 0 1px 0 0 rgba(255, 255, 255, 0.08),
+      0 12px 40px -8px rgba(0, 0, 0, 0.4);
+  }
+
+  /* Amber CTA — primary action */
+  .btn-amber {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    color: #0a0a0f;
+    font-weight: 700;
+    box-shadow:
+      0 0 0 1px rgba(245, 158, 11, 0.3),
+      0 8px 24px -8px rgba(245, 158, 11, 0.5),
+      inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+    transition:
+      transform 180ms ease,
+      box-shadow 220ms ease;
+  }
+
+  .btn-amber:hover:not(:disabled) {
+    box-shadow:
+      0 0 0 1px rgba(245, 158, 11, 0.5),
+      0 12px 32px -8px rgba(245, 158, 11, 0.7),
+      inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
+  }
+
+  .btn-amber:active:not(:disabled) {
+    transform: scale(0.98);
+  }
+
+  .btn-amber:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  /* Shimmer for skeleton states */
+  .shimmer {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.04) 0%,
+      rgba(255, 255, 255, 0.08) 50%,
+      rgba(255, 255, 255, 0.04) 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 2.4s linear infinite;
+  }
+}
+
+@layer utilities {
+  .tap-target {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  .safe-bottom {
+    padding-bottom: max(env(safe-area-inset-bottom), 0.5rem);
+  }
+
+  .safe-top {
+    padding-top: max(env(safe-area-inset-top), 0.5rem);
+  }
+
+  /* Text gradients */
+  .text-gradient-amber {
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+}
