@@ -33,6 +33,15 @@ Customer (QR) ──▶ Firebase ──▶ Kitchen screen (Staff)
                       └──▶ Cashier panel ──▶ Manager dashboard
 ```
 
+> ### 📦 What's in this repository
+> | Path | Content |
+> |---|---|
+> | [`semsy-frontend/semsy`](semsy-frontend/semsy) | Redesigned **customer ordering UI** — React 19 + TypeScript + Tailwind, glassmorphism dark theme, TR/EN i18n, cart (Context + useReducer), order tracking. Runs on mock data shaped like the Firebase schema |
+> | [`semsy.html`](semsy.html) | Standalone single-file ordering prototype |
+> | [`SEMSY/`](SEMSY) | IEEE 1016 design document, UML models (Visual Paradigm), presentation |
+>
+> The full three-role system described below (`semsy-app` + `semsy-backend`) is documented here; its source is not yet published in this repository.
+
 ---
 
 ## Features
@@ -139,8 +148,8 @@ semsy/
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/your-org/semsy.git
-cd semsy
+git clone https://github.com/serhattay1907/SEMSY_Service_Management_System.git
+cd SEMSY_Service_Management_System
 ```
 
 ### 2. Frontend
@@ -365,7 +374,7 @@ This is an academic prototype. The following items are documented in the product
 | Ercüment Sezer Kartal | 230709020 | Subject Matter Expert |
 | Nehir Yılmaz | 220709081 | |
 | Abdullah Özdemir | 220709002 | |
-| Serhat Tay | 220709054 | |
+| Serhat Tay | 220709054 | System Architecture, Development & Deployment |
 | İbrahim Çinğay | 210709018 | |
 
 ---
