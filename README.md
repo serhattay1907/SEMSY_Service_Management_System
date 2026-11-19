@@ -377,6 +377,10 @@ This is an academic prototype. The following items are documented in the product
 | Serhat Tay | 220709054 | System Architecture, Development & Deployment |
 | İbrahim Çinğay | 210709018 | |
 
+## License
+
+[MIT](LICENSE) © 2026 The SEMSY team
+
 ---
 
 *Design document baseline: IEEE 1016-2009 · UML 2.5.1 · OWASP Top 10 (2021) · KVKK*
