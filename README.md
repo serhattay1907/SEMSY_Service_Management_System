@@ -369,13 +369,13 @@ This is an academic prototype. The following items are documented in the product
 
 **CENG3004 — Software Engineering · 2025–2026 Spring**
 
-| Name | Student ID | Role |
-|---|---|---|
-| Ercüment Sezer Kartal | 230709020 | Subject Matter Expert |
-| Nehir Yılmaz | 220709081 | |
-| Abdullah Özdemir | 220709002 | |
-| Serhat Tay | 220709054 | System Architecture, Development & Deployment |
-| İbrahim Çinğay | 210709018 | |
+| Name | Role |
+|---|---|
+| Ercüment Sezer Kartal | Subject Matter Expert |
+| Nehir Yılmaz | |
+| Abdullah Özdemir | |
+| Serhat Tay | System Architecture, Development & Deployment |
+| İbrahim Çinğay | |
 
 ## License
 
