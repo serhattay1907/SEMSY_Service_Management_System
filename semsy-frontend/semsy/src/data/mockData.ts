@@ -109,7 +109,7 @@ export const mockProducts: Product[] = [
     price: 75,
     category: "coffee",
     imageUrl:
-      "https://images.unsplash.com/photo-1578374173705-969cbe6f2d6b?w=600&q=80",
+      "https://images.unsplash.com/photo-1787069791470-59cfc1dc5249?w=600&q=80",
     isActive: true,
     stock: 99,
     recipe: [],
@@ -225,7 +225,7 @@ export const mockProducts: Product[] = [
     price: 165,
     category: "food",
     imageUrl:
-      "https://images.unsplash.com/photo-1603046891744-1f76eb10aec9?w=600&q=80",
+      "https://images.unsplash.com/photo-1783307525039-b92506474dc8?w=600&q=80",
     isActive: true,
     stock: 18,
     recipe: [],

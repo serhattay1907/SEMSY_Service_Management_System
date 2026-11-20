@@ -34,6 +34,7 @@ export type StringKey =
   | "orderNumber"
   | "trackOrder"
   | "backToMenu"
+  | "noActiveOrder"
   | "orderStatus"
   | "received"
   | "preparing"
@@ -87,6 +88,7 @@ export const strings: Record<Language, Record<StringKey, string>> = {
     orderNumber: "Sipariş No",
     trackOrder: "Siparişi Takip Et",
     backToMenu: "Menüye Dön",
+    noActiveOrder: "Aktif sipariş yok.",
     orderStatus: "Sipariş Durumu",
     received: "Sipariş Alındı",
     preparing: "Hazırlanıyor",
@@ -139,6 +141,7 @@ export const strings: Record<Language, Record<StringKey, string>> = {
     orderNumber: "Order No",
     trackOrder: "Track Order",
     backToMenu: "Back to Menu",
+    noActiveOrder: "No active order.",
     orderStatus: "Order Status",
     received: "Order Received",
     preparing: "Being Prepared",

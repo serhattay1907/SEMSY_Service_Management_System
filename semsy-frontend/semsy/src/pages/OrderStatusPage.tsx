@@ -41,7 +41,7 @@ export function OrderStatusPage() {
       <div className="min-h-screen">
         <Header tableNumber={null} />
         <main className="mx-auto max-w-3xl px-4 py-16 text-center">
-          <p className="text-white/60">No active order.</p>
+          <p className="text-white/60">{t("noActiveOrder")}</p>
           <Button
             variant="amber"
             size="lg"
