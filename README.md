@@ -3,6 +3,10 @@
 > Web-based Point of Sale (POS) and Enterprise Resource Planning (ERP) system for cafés and restaurants.  
 > Real-time QR ordering · Kitchen display · Cashier panel · Manager dashboard · Ingredient-level inventory
 
+**🔗 Live demo:** [semsy.vercel.app](https://semsy.vercel.app) — customer QR ordering frontend, running on mock data (no backend connected).
+
+![SEMSY customer ordering flow: menu, cart, order confirmation, order tracking](docs/media/semsy-order-flow.jpg)
+
 ---
 
 ## Table of Contents
